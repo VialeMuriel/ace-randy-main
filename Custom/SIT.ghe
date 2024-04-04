@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1677781332509" createdUser="win10"
+    id="50454a2e:186a38ee061:-7ec3" type="environment_resource"
+    updatedTimestamp="1701209941044" updatedUser="win10" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
+        <environmentVariable evdescription="" key="Host" value="52.116.10.230"/>
+        <environmentVariable evdescription="" key="Port" value="7080"/>
+        <evbindings>
+            <evbinding evLogicalItemId="50454a2e:186a38ee061:-7ea7" evPhysicalItemId="50454a2e:186a38ee061:-7ea6"/>
+        </evbindings>
+    </resourceConfig>
+</editableResource>

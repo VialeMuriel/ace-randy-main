@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1677781788677" createdUser="win10"
+    id="50454a2e:186a38ee061:-7ca7" selfDescribing="ACE Hello"
+    type="parameterized_url_schema" updatedTimestamp="1677781788677"
+    updatedUser="win10" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig schemaSourceTemplateName="URL">
+        <schemaSourceConfig basePath="" name="ACE Hello">
+            <url templateName="mode">
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="jgraceivt"
+                    parameterName="jgraceivt" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="v1"
+                    parameterName="v1" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="hello"
+                    parameterName="hello" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="true" isParameterized="true"
+                    isParticipateToExpension="true" literal="mode"
+                    parameterName="mode" type="7"/>
+            </url>
+        </schemaSourceConfig>
+    </resourceConfig>
+</editableResource>

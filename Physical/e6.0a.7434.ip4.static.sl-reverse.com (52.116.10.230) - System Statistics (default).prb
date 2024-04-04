@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1677781438986" createdUser="win10"
+    id="50454a2e:186a38ee061:-7e68"
+    selfDescribing="e6.0a.7434.ip4.static.sl-reverse.com (52.116.10.230) - System Statistics (default)"
+    type="probe_resource" updatedTimestamp="1677781438986"
+    updatedUser="win10" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig defaultFlag="true" name="default"
+        physicalResourceID="50454a2e:186a38ee061:-7e72" probeID="plugin.custom.SysStat">
+        <SysStatDatasource allProcesses="true" configuration="default"/>
+    </resourceConfig>
+</editableResource>

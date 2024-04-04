@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1677781562468" createdUser="win10"
+    id="50454a2e:186a38ee061:-7da6"
+    references="50454a2e:186a38ee061:-7ea7" type="test_resource"
+    updatedTimestamp="1701274043419" updatedUser="win10" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="50454a2e:186a38ee061:-7da4"
+                references="50454a2e:186a38ee061:-7ea7"
+                selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
+                type="send_request_action" version="1.1">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; on resource &quot;/jgraceivt/v1/hello&quot; using schema &quot;Text&quot; via &quot;ACE Server&quot;" transport="50454a2e:186a38ee061:-7ea7">
+                    <headerMessage name="" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="MessageType" type="7"
+                            value="http.text.message.type" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="http.text.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="Method" type="7"
+                            value="GET" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction exp="GET" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="URL" type="7"
+                            value="/jgraceivt/v1/hello" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="/jgraceivt/v1/hello" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version" type="7"
+                                value="1.1" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="1.1" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c meTy="String" name="accept" type="7"
+                                    value="application/json" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="application/json" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                            </_c>
+                            <_c meTy="Boolean" name="followRedirects"
+                                type="8" value="true" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="true" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                    </headerMessage>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="text" sch="Text" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="50454a2e:186a38ee061:-7da0"
+                references="50454a2e:186a38ee061:-7ea7"
+                selfDescribing="Receive and validate a response to the request you have sent."
+                type="receive_reply_action" version="1.1">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; using schema &quot;Text&quot;"
+                    sendRequestID="50454a2e:186a38ee061:-7da4" transport="50454a2e:186a38ee061:-7ea7">
+                    <headerMessage assocdefid="Http Receive Reply"
+                        meTy="Message" name="" sch="Http Receive Reply"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="StatusCode"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="200" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="ReasonPhrase"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="OK" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails"
+                            sch="Http Receive Reply" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version"
+                                sch="Http Receive Reply" type="7" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="HTTP/1.1" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                sch="Http Receive Reply" type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c meTy="String" name="Content-Type"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="application/json;charset=utf-8" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Server"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="IBM App Connect Enterprise" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Date"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Thu, 02 Mar 2023 18:26:05 GMT" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Content-Length"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="255" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                            </_c>
+                        </_c>
+                        <_c meTy="String" name="MessageType"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="http.text.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="13:26:23.156 2023/03/02" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </headerMessage>
+                    <subconfig MessageType="http.text.message.type"
+                        _version="1.1" formatter="HTTP_Message" transport="50454a2e:186a38ee061:-7ea7"/>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c coreTypeInt="7" coreTypeName="String"
+                            name="text"
+                            nodeFormatter="JSON.nodeformatter"
+                            sch="Text" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="JSON.fieldexpander"
+                                fieldSchema="JSON" fieldSchemaRoot="Object"/>
+                            <contentTree>{"code":"CP4I0077","msg":"Hello from Green Integration powered by App Connect Enterprise v12.0.10.0 and IBM Cloud Pak for Integration - Integration Server running in pod: jgr-ace-12-srvr.JOEL-GOMEZ-RAMIREZ-s-Account.cloud","time":"2023-03-02T12:26:05.214"}<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                </defaultActions>
+                                <updates>
+                                    <updateField path="/text/Object">
+                                    <_c assocdefid="Object"/>
+                                    </updateField>
+                                    <setAction index="1"
+                                    path="/text/Object/msg"
+                                    replaceActionType="0" replaceOuterType="1">
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Hello from Green Integration powered by App Connect Enterprise v12.0.10.0 and IBM Cloud Pak for Integration - Integration Server running in pod: jgr-ace-12-srvr.JOEL-GOMEZ-RAMIREZ-s-Account.cloud" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="1"
+                                    path="/text/Object/msg"
+                                    replaceActionType="5" replaceOuterType="1">
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="5"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="1"
+                                    path="/text/Object/msg"
+                                    replaceActionType="6" replaceOuterType="1">
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="2"
+                                    path="/text/Object/time"
+                                    replaceActionType="0" replaceOuterType="1">
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="2023-03-02T12:26:05.214" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="2"
+                                    path="/text/Object/time"
+                                    replaceActionType="5" replaceOuterType="1">
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="5"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="2"
+                                    path="/text/Object/time"
+                                    replaceActionType="6" replaceOuterType="1">
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/Object/time">
+                                    <_c fieldIgnores="1"/>
+                                    </updateField>
+                                </updates>
+                            </contentTree>
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

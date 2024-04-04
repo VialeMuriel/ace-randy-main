@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1677781438126" createdUser="win10"
+    id="50454a2e:186a38ee061:-7e72"
+    selfDescribing="e6.0a.7434.ip4.static.sl-reverse.com (52.116.10.230)"
+    type="host_machine_resource" updatedTimestamp="1677781438126"
+    updatedUser="win10" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="52.116.10.230" user_host_name="e6.0a.7434.ip4.static.sl-reverse.com">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>
