@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1701275141392" createdUser="win10"
     id="4c2c89c7:18c1bbe613d:-7bd9" type="environment_resource"
-    updatedTimestamp="1712241114299" updatedUser="MURIELViale" version="1.0">
+    updatedTimestamp="1713966522319" updatedUser="MURIELViale" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
         <environmentVariable evdescription="" key="Host" value="169.61.33.227"/>
